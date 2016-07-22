@@ -1,0 +1,91 @@
+.carousel  {
+   max-width: 1445px; /* øèðèíà âñåãî áëîêà */
+   margin: 0 auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 30px; /* îòñòóïû äëÿ ñòðåëîê */
+   overflow: hidden; /* ñêðûâàåì ñîäåðæèìîå, âûõîäÿùåå çà ðàìêè îñíîâíîé îáëàñòè */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* óñòàíàâëèâàåì áîëüøóþ øèðèíó äëÿ íàáîðà ýëåìåíòîâ */
+   position: relative; /* ïîçèöèîíèðóåì áëîê îòíîñèòåëüíî îñíîâíîé îáëàñòè êàðóñåëè */
+}
+.carousel-block {
+   float: left; /* âûñòðàèâàåì âñå ýëåìåíòû êàðóñåëè â ðÿä */
+   width: 4.5%; /* çàäà¸ì øèðèíó êàæäîãî ýëåìåíòà */
+   padding: 10px 10px 10px 0px; /* äåëàåì îñòóïû, ÷òîáû ýëåìåíòû íå ñëèâàëèñü */
+   text-align: center;
+   color: #2768b9;
+}
+.carousel-block h3,
+.carousel-block h4{
+   font-family: 'MyriadProRegular';
+   font-size: 30px;
+   font-weight: normal;
+}
+.carousel-block h4{
+   font-size: 24px;
+}
+.carousel-block p{
+   font-family: 'RobotoRegular';
+   font-size: 18px;
+   color: #494949;
+}
+.carousel-block img{
+	display:block;
+   margin: 0 auto;
+  
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: absolute;
+   top: 33px; 
+   left: 35%;
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-right a{
+   width: 85px;
+   margin-left: 30px;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../img/carousel-left.png) no-repeat; 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../img/carousel-right.png) no-repeat; 
+}
+
+.spec{
+   background: url(../img/bg_spec.jpg) no-repeat 50%;
+   height: 100%;
+   padding-top: 25px;
+   position: relative;
+}
+.spec h2{
+   font-size: 36px;
+}
+.spec .all{
+   float: right;
+   color: #0654b5;
+   font-family: 'MyriadProRegular';
+   font-size: 24px;
+   margin-top: -50px;
+   margin-right: 20px;
+}
+@media (max-width: 1370px){
+   .carousel-block {
+   width: 4.15%;
+}
+}
+@media (max-width: 1250px){
+   .carousel-block {
+   width: 3.8%;
+}
+}

@@ -6,6 +6,21 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
 	<link href="css/style.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript">
+
+function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+       document.getElementById(id).style.display='block';
+    }else{
+       document.getElementById(id).style.display='none';
+    }
+}
+</script>
+
 
 </head>
 <body>
@@ -15,34 +30,48 @@
 
 
 			<nav class="scroll_nav">
-			<div>
-				<a href="index.html"><div class="logo"></div></a>
-				<ul>
-					<li><a href="">Услуги и Цены</a></li>
-					<li><a href="">Акции</a></li>
-					<li><a href="">Врачи</a></li>
-				</ul>
-				</div>
-				<div class="wrapper">
-					<ul class="dropdown">
-						<li class="dropdown-top">
-						<a class="dropdown-top" href="#"></a>
-							<ul class="dropdown-inside">
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Статьи</a></li>
-								<li><a href="#">Лаборатория</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</li>
-					</ul>
-					<div class="clear"></div>
-				</div>
-				<h2 class="tel"><span>+7(351)</span> 734-00-04</h2>
-				<a href="#"><div class="diagnosis">ДИАГНОЗ Online</div></a>
-				<div class="priem">Записатся на прием</div>
-			</nav>
+			<!--Логотип-->
+				<a href="index.html">
+					<div class="logo"></div>
+				</a>
 
+				<div class="nav-top">
+					
+
+					<a href="#">
+					<div onclick="openbox('box'); return false" class="priem">Записатся на прием
+					</div>
+						<div class="diagnosis">ДИАГНОЗ Online
+						</div>
+					</a>
+
+					<h2 class="tel"><span>+7(351)</span> 734-00-04</h2>
+					
+				</div>
+				<div class="nav-bottom">
+					<ul>
+						<li><a href="">Услуги и Цены</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">Врачи</a></li>
+					</ul>
+				
+					<div class="wrapper">
+						<ul class="dropdown">
+							<li class="dropdown-top">
+							<a class="dropdown-top" href="#"></a>
+								<ul class="dropdown-inside">
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Лаборатория</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</nav>
 
 
 
@@ -51,13 +80,62 @@
 				<h1>-технология художественной реставрации зубов</h1>
 				<a href="">Подробнее...</a>
 			</div>
-			<a href="#">
+			<a href="#" onclick="openbox('box'); return false">
 				<div class="registration"><p>Записатся на прием</p>
 				</div>
 			</a>
 		</div>
 	</header>
 
+<!--Слайд специалистов-->
+	<div class="spec">
+   <div class="carousel shadow"> 
+   <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
+   <a href="" class="all">Все врачи</a>
+      <div class="carousel-button-left"><a href="#"></a></div> 
+      <div class="carousel-button-right"><a href="#"></a></div> 
+		<div class="carousel-wrapper"> 
+		   <div class="carousel-items"> 
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec1.png" alt="" />
+					<h3>Беляева</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec2.png" alt="" />
+					<h3>Назаров</h3>
+					<h4>Владимир Владимирович</h4>
+					<p>Ортопед, имплантолог</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec3.png" alt="" />
+					<h3>Воронова</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+			 	<a href="#"><div class="carousel-block">
+					<img src="img/spec1.png" alt="" />
+					<h3>Беляева</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec2.png" alt="" />
+					<h3>Назаров</h3>
+					<h4>Владимир Владимирович</h4>
+					<p>Ортопед, имплантолог</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec3.png" alt="" />
+					<h3>Воронова</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+		   </div>
+		</div>
+   </div>
+</div>	
 
 	<article class="action">
 		<h2>АКЦИИ</h2>
@@ -153,7 +231,25 @@
 			<p class="time">8:00-21:00</p>
 		</div>
 	</article>
-	<script src="js/headhesive.min.js"></script>
+
+
+	<article class="social">
+		<hgroup>
+			<p>Мы в соц. сетях:</p>
+			<a href="#"><div class="vk"></div></a>
+			<a href="#"><div class="in"></div></a>
+			<a href="#"><div class="f"></div></a>
+		</hgroup>
+	</article>
+	<div id="box">
+		<h2>Запись на прием</h2>
+		<a href="#" onclick="openbox('box'); return false"><img src="img/close.png" alt="закрыть"></a>
+		<img src="img/box.png" alt="">
+		<h3>Ваша заявка отпралена</h3>
+		<p>Наш менеджер свяжется с вами и уточнит параметры записи.</p>
+	</div>
+
+	<script src="js/headhesive.min.js"></script><!--Меню при скроле-->
 	<script src="js/js.js"></script>
 </body>
 </html>

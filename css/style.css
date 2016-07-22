@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(fonts.css);
 @import url(nav.css);
+@import url(styles-carousel.css);
 
 
 h1{
@@ -28,8 +29,7 @@ a{
 .action,
 .services,
 .credit,
-.address,
-.headhesive>div{
+.address{
 	max-width: 1445px;
 }
 /*/////HEADER/////*/
@@ -51,14 +51,14 @@ nav{
 	background: #0148a0;
 	position: fixed;
 	width: 100%;
-	min-width: 760px;
+	min-width: 780px;
 	transform: translateY(-300%);
 	z-index: 1000;
 	height: 52px;
 	padding-top: 0;
 }
 .headhesive>div{
-	margin: 0 auto;
+	/*margin-left: 10%;*/
 }
 .headhesive .logo{
 	background: url(../img/logo2.png) no-repeat;
@@ -69,33 +69,40 @@ nav{
 .headhesive ul{
 	margin-top: 15px;
 }
-.headhesive .diagnosis{
+.headhesive .nav-top .diagnosis{
 	background: #4283d4;
 	height: 52px;
 	padding: 15px 28px;
 	margin-top: 0;
-	float: left;
+	float: right;
+	width: 30%;
 }
-.headhesive .tel{
+.headhesive .nav-top{
+	width: 50%;
+}
+.headhesive .nav-top .tel{
 	margin-top: 11px;
 	font-size: 24px;
 	float: left;
+	width: 30%;
 }
 .headhesive--stick{
 	transform: translateY(0);
 	transition: 0.5s;
 }
 .headhesive .priem{
+	cursor: pointer;
 	display: block;
 	background: #ffe24e;
 	height: 52px;
-	margin-right: 0;
+	width: 40%;
+	/*float: right;*/
 	/*position: absolute;
 	right: 0;*/
 	font-family: 'RobotoRegular';
 	font-size: 18px;
 	text-transform: uppercase;
-	width: 26%;
+	float: right;
 	padding: 15px 0 0 20px;
 
 }
@@ -105,18 +112,48 @@ nav{
 	width: 211px;
 	height: 103px;
 }
-.logo, nav ul{
+.logo,
+.nav-bottom{
 	float: left;
 }
-.diagnosis, .tel{
+.nav-top{
+	width: 36.7%;
+	float: right;
+}
+.nav-top .tel{
+	float: right;
+	font-size: 36px;
+	color: #fff;
+	width: 59%;
+	margin-top: -10px;
+}
+.nav-top .diagnosis{
+	background: url(../img/diagnosis.png) no-repeat;
+	float: left;
+	width: 40%;
+	height: 89px;
+	font-size: 18px;
+	font-family: 'RobotoRegular';
+	padding: 35px 28px;
+	margin-top: -35px;
+	/*margin-right: 2%;
+	margin-left: 3%;*/
+}
+.nav-top h2{
+	display: block;
+}
+.nav-bottom{
+	width: 34.6%;
+}
+.nav-bottom .wrapper{
 	float: right;
 }
 /*.diagnosis, .tel{
 	float: right;
 }*/
 nav ul{
-	width: 30%;
-	min-width: 450px;
+	/*width: 30%;
+	min-width: 450px;*/
 }
 nav li{
 	display: inline-block;
@@ -127,28 +164,14 @@ nav a{
 	font-family: 'RobotoLight';
 	font-size: 24px;
 }
-.diagnosis{
-	background: url(../img/diagnosis.png) no-repeat;
-	height: 89px;
-	width: 199px;
-	font-size: 18px;
-	font-family: 'RobotoRegular';
-	padding: 35px 28px;
-	margin-top: -35px;
-	margin-right: 2%;
-	margin-left: 3%;
-}
 .tel{
-	font-size: 36px;
-	color: #fff;
-	margin-top: -17px;
-	margin-left: 80px;
 }
 .tel span{
 	font-family: 'RobotoThin';
 }
 .priem{
 	display: none;
+	color: #101010;
 }
 .registration{
 	float: left;
@@ -433,8 +456,135 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 }
 
 /*//END ADDRESS///*/
+/*/////SOCIAL/////*/
+
+.social{
+	background: #f7f7f7;
+	height: 48px;
+	padding-top: 15px;
+}
+.social div{
+	width: 32px;
+	height: 28px;
+	display: inline-block;
+	margin: 0 10px;
+}
+.social hgroup{
+	max-width: 1445px;
+	margin: 0 auto;
+	padding-left: 30px;
+}
+.social p{
+	float: left;
+	font-size: 18px;
+	font-family: 'RobotoRegular';
+	color: #7f7f7f;
+}
+.social .vk{
+	background: url(../img/social.png) no-repeat;
+	margin-left: 30px;
+}
+.social .in{
+	background: url(../img/social.png) no-repeat;
+	background-position: -32px 0;
+}
+.social .f{
+	background: url(../img/social.png) no-repeat;
+	background-position: -64px 0;
+}
+/*///END SOCIAL///*/
+
+/*/////CAROUSEL/////*/
+#box{
+   width: 100%;
+   height: 515px;
+   text-align: center;
+   background: #30a638;
+   display: none;
+   position: fixed;
+   top: 150px;
+}
+#box h2{
+	display: inline-block;
+	background: #5ace62;
+	color: #fff;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 90px;
+	font-family: 'RobotoLight';
+	font-size: 48px;
+}
+#box h3,
+#box p{
+	color: #fff;
+	font-family: 'RobotoRegular';
+	font-weight: normal;
+}
+#box h3{
+	font-size: 30px;
+	margin-top: 20px;
+}
+#box a{
+	float: right;
+	position: relative;
+	margin-right: 25px;
+	top: -70px;
+}
+/*///END CAROUSEL///*/
+
+.address:after,
 .services:after{
   content: '';
   display: table;
   clear: both;
+}
+@media (max-width: 1520px){
+	.nav-top{
+		width: 40%;
+	}
+	.nav-top .tel{
+		font-size: 28px;
+	}
+	.nav-top .diagnosis{
+		font-size: 14px;
+	}
+}
+@media (max-width: 1340px){
+	.headhesive .nav-top .tel{
+		font-size: 18px;
+		padding-left: 10px;
+	}
+}
+@media (max-width: 1295px){
+	.nav-top .tel{
+		font-size: 22px;
+	}
+	.nav-top .diagnosis{
+		padding-top: 25px;
+	}
+	.nav-bottom li a{
+		font-size: 20px;
+	}
+	.nav-bottom {
+		
+	}
+	.logo{
+		background: url(../img/logo2.png) no-repeat;
+		width: 138px;
+		margin-right: 5px;
+	}
+	ul.dropdown .dropdown-inside{
+		height: 50px;
+		padding-top: 15px;
+	}
+}
+@media (max-width: 1132px){
+	.headhesive .nav-top .priem{
+		font-size: 14px;
+	}
+}
+@media (max-width: 1075px){
+	.headhesive .nav-top .tel{
+		font-size: 16px;
+	}
 }

@@ -4,14 +4,13 @@ h1 {
 }
 .wrapper {
 	width: 28px; 
-	float: left;
 }
 .wrapper a{
 	color: #2768b9;
 	font-size: 18px;
 }
-.headhesive .wrapper{
-	margin-top: 10px;
+.headhesive .nav-bottom .wrapper{
+	margin-top: -8px;
 }
 .headhesive ul.dropdown .dropdown-inside{
 	height: 88px;
@@ -31,7 +30,7 @@ ul.dropdown-inside {
 ul.dropdown li.dropdown-top {
 	display: inline;
 	float: left;
-	margin: -36px 1px 0 0;
+	margin: -55px 1px 0 0;
 	width: 85px;
 	height: 70px; 
 	background: url(../img/icon_nav.png) no-repeat;
