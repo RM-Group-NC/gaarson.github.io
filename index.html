@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
-	<title>Document</title>
+	<title>Белый кит</title>
 	<link href="css/style.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>
+	<script src="js/mobilyslider.js" type="text/javascript"></script>
+	<script src="js/init.js" type="text/javascript"></script>
 	<script type="text/javascript">
 
 function openbox(id){
@@ -20,6 +22,20 @@ function openbox(id){
     }
 }
 </script>
+<script> //Раскрывает информацию о клиники
+var show;
+function hidetxt(type){
+ param=document.getElementById(type);
+ if(param.style.display == "none") {
+ if(show) show.style.display = "none";
+ param.style.display = "block";
+ show = param;
+ }else param.style.display = "none"
+}
+var array = new Array();
+var speed = 10;
+var timer = 10;
+</script>
 
 
 </head>
@@ -30,11 +46,9 @@ function openbox(id){
 
 
 			<nav class="scroll_nav">
-			<!--Логотип-->
 				<a href="index.html">
 					<div class="logo"></div>
 				</a>
-
 				<div class="nav-top">
 					
 
@@ -187,7 +201,58 @@ function openbox(id){
 		</div>
 	</article>
 
-
+<!--Слайд с отзывами-->
+<article class="slaid2">
+<div id="content">
+		<div class="slider slider3">
+			<div class="sliderContent">
+			<a href="#" class="all_otz">Все отзывы</a>
+				<div class="item">
+					<blockquote>
+   					<h2>ЛЕЧЕНИЕ ЧАСТО ЗАНИМАЕТ МНОГО ВРЕМЕНИ. С CEREC, Я ПОЛУЧИЛ ПОЛНЦЕННУЮ КОРОНКУ ВСЕГО ЗА ОДИН ВЕЗИТ...</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment.png" alt="" />
+				</div>
+				<div class="item">
+				<blockquote>
+   					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis ep</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment2.png" alt="" />
+				</div>
+				<div class="item">
+				<blockquote>
+   					<h2>ЛЕЧЕНИЕ ЧАСТО ЗАНИМАЕТ МНОГО ВРЕМЕНИ. С CEREC, Я ПОЛУЧИЛ ПОЛНЦЕННУЮ КОРОНКУ ВСЕГО ЗА ОДИН ВЕЗИТ...</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment.png" alt="" />
+				</div>
+				<div class="item">
+				<blockquote>
+   					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis ep</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment2.png" alt="" />
+				</div>
+				<div class="item">
+				<blockquote>
+   					<h2>ЛЕЧЕНИЕ ЧАСТО ЗАНИМАЕТ МНОГО ВРЕМЕНИ. С CEREC, Я ПОЛУЧИЛ ПОЛНЦЕННУЮ КОРОНКУ ВСЕГО ЗА ОДИН ВЕЗИТ...</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment.png" alt="" />
+				</div>
+				<div class="item">
+				<blockquote>
+   					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis ep</h2>
+   					<p>Катерина Фишер - известная личность ;)</p>
+   				</blockquote>
+					<img src="img/comment2.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
 	<article class="credit">
 		<a href="#">
 			<div class="column">
@@ -241,6 +306,46 @@ function openbox(id){
 			<a href="#"><div class="f"></div></a>
 		</hgroup>
 	</article>
+<article class="inf">
+		<div>
+			<a onclick="hidetxt('div1'); return false;" href="#" rel="nofollow">О стоматологии белый кит &darr;</a>
+			<div style="display:none;" id="div1">
+				<h2>Сеть клиник «Белый Кит» – это стоматология для всей семьи</h2>
+				<div class="three_whale">
+					<img src="img/whale1.png" alt="">
+					<h4>Основная миссия стоматологии «Белый Кит»:</h4>
+					<p>наша миссия  собственным примером повышать уровень стоматологических услуг в Российской Федерации, каждый день создавая новое качество жизни и здоровья людей.</p>
+				</div>
+				<div class="three_whale">
+					<img src="img/whale2.png" alt="">
+					<h4>Наши главные принципы стоят на трех китах</h4>
+					<p>– это отличный сервис, высокая квалификация персонала и современные технологии.</p>
+				</div>
+				<div class="three_whale">
+					<img src="img/whale3.png" alt="">
+					<h4>Самая важная задача:</h4>
+					<p>возвращение стоматологического здоровья нашим пациентам, путем применения проверенных передовых технологий с опорой на природные возможности организма человека.</p>
+				</div>
+				<h3>Профессионализм – всегда на первом месте!</h3>
+				<p>У нас работают лучшие врачи, для которых стоматология не ремесло, а призвание. Они проводят лечение по передовым методикам и совершенствуют свои профессиональные навыки. </p>
+				<p>частливые улыбки благодарных пациентов – это самое лучшее признание их мастерства. Наличие собственной дентальной лаборатории с инновационным оснащением, современного оборудования для диагностики и лечения помогают врачам достигать отличных результатов и оказывать помощь различной степени сложности.</p>
+				<p>Стоматология "Белый Кит" является членом Саморегулируемой организации "Межрегиональное Некоммерческое Партнерство Стоматологических предприятий "Лига" и саморегулируемой организации "Объединение частных медицинских организаций "МЕДСОЮЗ", что обеспечивает дополнительные гарантии качества и безопасности оказываемых нами стоматологических услуг.</p>
+				<p>Мы проводим эффективную профилактику и качественное лечение взрослых, а также уделяем особое внимание здоровью будущих мам и маленьких пациентов.</p>
+				<h3>Важнейшая ценность для нас – доверие наших клиентов!</h3>
+				<p>Уютная обстановка, индивидуальный подход, современные методики обезболивания, стерильные инструменты, инновационные технологии, сертифицированные материалы, детский психолог, скидки для постоянных пациентов, возможность лечения в кредит – в клиниках созданы все условия для комфорта и безопасности наших пациентов. Мы стремимся к тому, чтобы стоматология решала все проблемы наших пациентов и открывала для них новые жизненные перспективы после успешного лечения.</p>
+				<p>Почему «Белый Кит»?</p>
+				<p>Белый цвет символизирует цвет очищения, радости и перехода к новому состоянию. Кит - это древний знак возрождения, символ самой природы. </p>
+				<p>Стоматология «Белый Кит» – это идеальное сочетание высокого качества, индивидуального подхода, максимального комфорта и безупречного сервиса для удовлетворения даже самых требовательных пациентов! Мы подарим вам радость жизни и безупречную улыбку, вернув здоровье и красоту</p>
+				<p>Мы используем разные способы для решения поставленных задач, предоставляя следующие виды услуг!</p>
+				<a onclick="hidetxt('div1'); return false;" href="#" rel="nofollow">Свернуть &uarr;</a>
+			</div>
+		</div>
+</article>
+<footer>
+	<img src="img/abro-copyright.png" alt="">
+	<p>	&copy;Белый Кит 2009—2016</p>
+</footer>
+
 	<div id="box">
 		<h2>Запись на прием</h2>
 		<a href="#" onclick="openbox('box'); return false"><img src="img/close.png" alt="закрыть"></a>

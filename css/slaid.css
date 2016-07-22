@@ -1,0 +1,143 @@
+/* ------ Общие стили
+-----------------------------------------------*/
+
+.pd{
+padding:10px;
+background:#B0AFAF;
+float:left;
+clear:both;
+width:100%;
+margin-bottom:10px;
+font-weight: bold;
+}
+
+
+/* ------ Стили для mobilyslider
+-----------------------------------------------*/
+
+#content {
+margin:100px auto 0;
+}
+
+.slider {
+float:left;
+width:100%;
+height:545px;
+position:relative;
+padding-bottom:26px;
+}
+
+.sliderContent {
+float:left;
+width:100%;
+height:100%;
+margin-top: -100px;
+clear:both;
+position:relative;
+overflow:hidden;
+background: #f7f7f7;
+}
+.sliderContent .all_otz{
+	color: #0654b5;
+  font-family: 'MyriadProRegular';
+  font-size: 24px;
+  position: absolute;
+  top:86%;
+	right: 500px;
+	z-index: 1000;
+}
+
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+margin-top:-34px;
+}
+
+.prev {
+background: url(../img/carousel-left.png) no-repeat;
+width:28px;
+height:29px;
+position:absolute;
+top:70%;
+right: 395px;
+}
+
+.next {
+background: url(../img/carousel-right.png) no-repeat;
+width: 89px;
+height:29px;
+position:absolute;
+top:70%;
+right: 300px;
+
+}
+
+
+.sliderContent .item {
+position:absolute;
+max-width: 1445px;
+width:100%;
+height:545px;
+background:#f7f7f7;
+margin: 0 auto;
+}
+.sliderContent .item img{
+	margin-top: 44px;
+	margin-left: 15%;
+}
+
+
+
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color:#fff;
+}
+
+a img {
+border:none;
+}
+blockquote{
+	position: absolute;
+	width: 950px;
+	right: 0px;
+	top: 100px;
+	letter-spacing: 2.1;
+}
+blockquote h2{
+	font-family: 'RobotoLight';
+	font-size: 36px;
+	color: #8e8f8f;
+	margin: 1em 3em;
+	text-transform: uppercase;
+}
+blockquote p{
+	font-family: 'RobotoLight';
+	font-size: 18px;
+	color: #8e8f8f;
+}
+blockquote:before, blockquote:after {
+    font-size: 20em;
+    color: #efefef;
+   } 
+   blockquote:before {
+    content: 'ʻʻ';
+    float: left;
+    margin-top: -0.4em;
+    
+   }
+   blockquote:after {
+    content: ',,';
+    float: right;
+    margin-top: -1.2em;
+   }

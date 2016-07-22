@@ -2,6 +2,7 @@
 @import url(fonts.css);
 @import url(nav.css);
 @import url(styles-carousel.css);
+@import url(slaid.css);
 
 
 h1{
@@ -17,6 +18,7 @@ h2{
 body{
 	max-width: 1920px;
 	min-width: 780px;
+	margin: 0 auto;
 }
 li{
 	list-style: none;
@@ -29,7 +31,8 @@ a{
 .action,
 .services,
 .credit,
-.address{
+.address,
+.inf{
 	max-width: 1445px;
 }
 /*/////HEADER/////*/
@@ -37,7 +40,7 @@ a{
 header{
 	width: 100%;
 	height: 759px;
-	background: url(../img/bg_header.jpg) no-repeat 50%;
+	background: #566c79 url(../img/bg_header.jpg) no-repeat 50%;
 }
 .header{
 	height: 100%;
@@ -52,6 +55,7 @@ nav{
 	position: fixed;
 	width: 100%;
 	min-width: 780px;
+	max-width: 1920px;
 	transform: translateY(-300%);
 	z-index: 1000;
 	height: 52px;
@@ -65,9 +69,11 @@ nav{
 	width: 138px;
 	height: 37px;
 	margin-top: 6px;
+	margin-left: 1%;
 }
 .headhesive ul{
 	margin-top: 15px;
+	padding-left: 0;
 }
 .headhesive .nav-top .diagnosis{
 	background: #4283d4;
@@ -143,7 +149,7 @@ nav{
 	display: block;
 }
 .nav-bottom{
-	width: 34.6%;
+	width: 30.6%;
 }
 .nav-bottom .wrapper{
 	float: right;
@@ -225,7 +231,7 @@ nav a{
 /*//CONSULTATION//*/
 
 .consultation{
-	background: url(../img/bg_consultation.jpg) no-repeat;
+	background: #3899ef url(../img/bg_consultation.jpg) no-repeat;
 	height: 80px;
 }
 .white_whale div,
@@ -532,6 +538,70 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 }
 /*///END CAROUSEL///*/
 
+/*////////INF///////*/
+
+.inf a{
+	color: #0654b5;
+	font-family: 'RobotoLight';
+	font-size: 18px;
+}
+.inf{
+	text-align: center;
+	margin: 20px auto;
+}
+.inf h3,
+.inf h4,
+.inf p{
+	color: #494949;
+	font-family: 'RobotoRegular';
+}
+.inf h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'RobotoRegular';
+	margin-top: 20px;
+}
+.inf h3{
+	font-size: 24px;
+	margin: 50px 0 20px 0;
+}
+.inf h4{
+	font-size: 20px;
+}
+.inf p{
+	text-align: left;
+	font-family: 'RobotoLight';
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.three_whale{
+	width: 33%;
+	display: inline-block;
+	margin-top: 30px;
+	vertical-align: top;
+}
+/*/////END INF//////*/
+/*//////FOOTER//////*/
+
+footer{
+	max-width: 1445px;
+	margin: 0 auto;
+}
+footer img{
+	float: left;
+	margin-bottom: 40px;
+}
+footer p{
+	float: right;
+	font-family: 'RobotoLight';
+	font-size: 14px;
+	color: #4f4f4f;
+
+}
+
+/*////END FOOTER////*/
+
 .address:after,
 .services:after{
   content: '';
@@ -573,7 +643,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 		width: 138px;
 		margin-right: 5px;
 	}
-	ul.dropdown .dropdown-inside{
+	.wrapper ul.dropdown .dropdown-inside{
 		height: 50px;
 		padding-top: 15px;
 	}
@@ -582,9 +652,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 	.headhesive .nav-top .priem{
 		font-size: 14px;
 	}
+	.carousel-button-left a, .carousel-button-right a{
+		top: 80px;
+		left: 10px;
+	}
+	.spec h2{
+   margin-bottom: 50px;
+   margin-left: 10px;
+}
+	.sliderContent .item img{
+		opacity: 0.3;
+	}
 }
 @media (max-width: 1075px){
 	.headhesive .nav-top .tel{
 		font-size: 16px;
+	}
+	.headhesive .logo{
+		margin-left: 0;
+	}
+}
+@media (max-width: 982px){
+	ul.dropdown li.dropdown-top{
+		margin-top: -70px;
+	}
+
+}
+@media (max-width: 960px){
+	.headhesive .nav-bottom li a{
+		font-size: 16px;
+	}
+	.headhesive .nav-bottom li{
+		margin: 0 0.5%;
+	}
+	.headhesive .nav-bottom {
+		width: 25%;
+		margin-top: -5px;
+	}
+	.headhesive .nav-top .tel{
+		font-size: 13px;
+		margin-top: 18px;
 	}
 }
