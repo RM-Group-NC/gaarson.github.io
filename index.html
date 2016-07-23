@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,8 @@
 	<script type="text/javascript" src="js/carousel.js"></script>
 	<script src="js/mobilyslider.js" type="text/javascript"></script>
 	<script src="js/init.js" type="text/javascript"></script>
-	<script type="text/javascript">
+
+	<script type="text/javascript">//Заявка, Диагностика
 
 function openbox(id){
     display = document.getElementById(id).style.display;
@@ -54,8 +55,9 @@ var timer = 10;
 
 					<a href="#">
 					<div onclick="openbox('box'); return false" class="priem">Записатся на прием
-					</div>
-						<div class="diagnosis">ДИАГНОЗ Online
+					</div></a>
+					<a href="#">
+						<div onclick="openbox('box2'); return false" class="diagnosis">ДИАГНОЗ Online
 						</div>
 					</a>
 
@@ -103,7 +105,7 @@ var timer = 10;
 
 <!--Слайд специалистов-->
 	<div class="spec">
-   <div class="carousel shadow"> 
+   <div class="carousel"> 
    <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
    <a href="" class="all">Все врачи</a>
       <div class="carousel-button-left"><a href="#"></a></div> 
@@ -150,7 +152,7 @@ var timer = 10;
 		</div>
    </div>
 </div>	
-
+<!--Акции-->
 	<article class="action">
 		<h2>АКЦИИ</h2>
 		<div class="baner"><img src="img/baner1.jpg" alt=""></div>
@@ -158,7 +160,7 @@ var timer = 10;
 		<div class="baner"><img src="img/baner3.jpg" alt=""></div>	
 	</article>
 
-
+<!--Видео консультация-->
 	<article class="consultation">
 		<div>
 			<h2>Видео консультация</h2>
@@ -166,7 +168,7 @@ var timer = 10;
 		</div>
 	</article>
 
-
+<!--Услуги-->
 	<article class="services">
 		<h2>УСЛУГИ</h2>
 		<div class="left">
@@ -192,7 +194,7 @@ var timer = 10;
 		</div>
 	</article>
 
-
+<!--Клиника года-->
 	<article class="white_whale">
 		<div class="cup"><img src="img/cup.png" alt=""></div>
 		<div>
@@ -202,7 +204,7 @@ var timer = 10;
 	</article>
 
 <!--Слайд с отзывами-->
-<article class="slaid2">
+
 <div id="content">
 		<div class="slider slider3">
 			<div class="sliderContent">
@@ -252,7 +254,9 @@ var timer = 10;
 			</div>
 		</div>
 	</div>
-</article>
+
+
+
 	<article class="credit">
 		<a href="#">
 			<div class="column">
@@ -274,29 +278,7 @@ var timer = 10;
 		</a>
 	</article>
 
-	<article class="address">
-		<div>
-			<h3><span>Белый кит</span></h3>
-			<p>ул. Сони Кривой 67 а</p>
-			<p class="time">8:00-21:00</p>
-		</div>
-		<div>
-			<h3>Белый кит <span>Профи</span></h3>
-			<p>ул. Энгельса 61</p>
-			<p class="time">8:00-20:00</p>
-		</div>
-		<div>
-			<h3>Белый кит <span>Premium</span></h3>
-			<p>ул. Кирова 159, оф. 608, БЦ «Челябинск Сити»</p>
-			<p class="time">8:00-20:00</p>
-		</div>
-		<div>
-			<h3>Белый кит <span>Аллея</span></h3>
-			<p>ул. Университетская Набережная, 76</p>
-			<p class="time">8:00-21:00</p>
-		</div>
-	</article>
-
+	<iframe class="map" src="map_address/address1.html" width="100%" height="760" frameborder="0"></iframe>
 
 	<article class="social">
 		<hgroup>
@@ -346,14 +328,37 @@ var timer = 10;
 	<p>	&copy;Белый Кит 2009—2016</p>
 </footer>
 
-	<div id="box">
-		<h2>Запись на прием</h2>
-		<a href="#" onclick="openbox('box'); return false"><img src="img/close.png" alt="закрыть"></a>
-		<img src="img/box.png" alt="">
-		<h3>Ваша заявка отпралена</h3>
-		<p>Наш менеджер свяжется с вами и уточнит параметры записи.</p>
-	</div>
-
+<div id="box2">
+	<a href="#" class="close2" onclick="openbox('box2'); return false"><img src="img/close2.png" alt="закрыть"></a>
+	<div class="h2"><h2>Диагностика онлайн</h2></div>
+		<div class="box2">
+			<h3>Скорее всего у вас Пульпит!</h3>
+			<p>Рекомендуем записаться на прием чтобы наши специалисты провести осмотр определили точный диагноз и назначили лечение.</p>
+			<div class="rezultat">
+			<p>Причиной болезни являются микроорганизмы, возникающие и размножающиеся вместе с кариесом. Оно может развиться на фоне травмы, в случае травмирования большей части зуба. Какой бы не была причина возникновения заболевания, мы найдем эффективный способ, что бы избавить вас от них.</p>
+			<p>Стоимость лечения пульпита в нашей клинике зависит от объема проделанных работ, методов и количества корневых каналов зуба.</p>
+			<div class="c_k_z">
+				<p class="price">от<span>3210</span><span class="rub">₶</span></p>
+				<a href="#"><img src="img/calendar.png" alt=""></a>
+				<a href="#" onclick="openbox('box'); return false">
+					<div class="two"><p>Записатся на прием</p>
+					</div>
+				</a>
+			</div>
+			<div class="down">
+			<a href="">&larr;Назад</a>
+			<a href="">Пройти тест заного</a>
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="box">
+	<h2>Запись на прием</h2>
+	<a href="#" onclick="openbox('box'); return false"><img src="img/close.png" alt="закрыть"></a>
+	<img src="img/box.png" alt="">
+	<h3>Ваша заявка отпралена</h3>
+	<p>Наш менеджер свяжется с вами и уточнит параметры записи.</p>
+</div>
 	<script src="js/headhesive.min.js"></script><!--Меню при скроле-->
 	<script src="js/js.js"></script>
 </body>
