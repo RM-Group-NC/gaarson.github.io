@@ -19,7 +19,6 @@ h2{
 }
 body{
 	max-width: 1920px;
-	min-width: 770px;
 	margin: 0 auto;
 }
 li{
@@ -31,7 +30,7 @@ a{
 }
 .header,
 .action,
-.services,
+.f-services,
 .credit,
 .address,
 .inf{
@@ -199,7 +198,7 @@ nav a{
 	color: #fff;
 	max-width: 505px;
 	margin-top: 90px;
-	width: 40%;
+	width: 54%;
 }
 .cerec img{
 	width: 100%;
@@ -226,7 +225,7 @@ nav a{
 }
 .baner{
 	width: 31.5%;
-	margin: 20px 0.7%;
+	margin: -95px 0.7% 30px;
 	display: inline-block;
 }
 .action img{
@@ -271,11 +270,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 /*END CONSULTATION*/
 /*////SERVICES////*/
 .services{
+	height: 900px;
+}
+.f-services{
 	margin: 34px auto;
 	position: relative;
 }
-.services h2{
+.f-services h2{
 	margin-bottom: 20px;
+	font-size: 36px;
 }
 .left{
 	width: 23.2%;
@@ -356,13 +359,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 }
 .right{
 	width: 73%;
+	height: 700px;
 	float: right;
+	position: relative;
 }
 .right p{
 	font-family: 'MyriadProRegular';
 	font-size: 24px;
 	color: #494949;
 	padding-left: 2%;
+	margin: 5px 0;
+	
 }
 .right a{
 	color: #0654b5;
@@ -400,7 +407,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 	background: #3899ef;
 	position: relative;
 	padding-bottom: 8px;
-	margin-top: 80px;
 }
 .white_whale div{
 	text-align: center;
@@ -449,6 +455,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 .map{
 	box-shadow: 0 -5px 15px #f3f3f3;
 }
+.overlay {
+	background:transparent; 
+	position:relative; 
+	width:100%;
+	height:578px;
+	top:550px;
+	margin-top:-550px;
+}
 .address div{
 	display: inline-block;
 	float: left;
@@ -480,7 +494,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 }
 .activ img{
 	position: absolute;
-	top: 120px;
+	top: 150px;
 }
 .add_one img{
 	left: -20px;
@@ -547,7 +561,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
    background: #30a638;
    display: none;
    position: fixed;
-   top: 150px;
+   top: 0px;
    padding-bottom: 60px;
    z-index: 100;
 }
@@ -584,7 +598,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 #box2{
    background: #0b5ebb;
    text-align: left;
-   top: 50px;
 }
 #box2 .box2{
 	max-width: 1445px;
@@ -804,7 +817,7 @@ footer p{
   }
   .activ img {
     position: absolute;
-    top: 100px;
+    top: 130px;
 	}
 }
 @media (max-width: 1132px){
@@ -816,11 +829,13 @@ footer p{
 		left: 10px;
 	}
 	.spec h2{
-   margin-bottom: 50px;
    margin-left: 10px;
 }
 	.sliderContent .item img{
 		opacity: 0.3;
+	}
+	.spec .sliderContent .item img{
+		opacity: 1;
 	}
 }
 @media (max-width: 1075px){
@@ -851,11 +866,12 @@ footer p{
 	.headhesive .nav-top .tel{
 		font-size: 13px;
 		margin-top: 18px;
-	}
-}
-@media (max-width: 960px){
+	}	
 	.address img{
 		display: none;
 	}
+}
+@media (max-width: 930px){
+	
 }
 

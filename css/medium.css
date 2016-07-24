@@ -1,11 +1,24 @@
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
 	.scroll_nav .nav-top .tel{
 		padding-left: 10px;
 		margin-top: -20px;
+		font-size: 
 	}
 	.scroll_nav .nav-top .diagnosis{
-		
 		background-position: 0 -20px;
+	}
+	.headhesive .nav-top{
+	}
+	.headhesive .nav-top .tel{
+		position: absolute;
+		right: 150px;
+	}
+	.headhesive .nav-top .diagnosis{
+		position: absolute;
+		right: 0;
+	}
+	.headhesive .nav-top .priem{
+		display: none;
 	}
 	.scroll_nav .nav-top{
 		width: 65%;
@@ -27,8 +40,18 @@
 	}
 	.wrapper ul.dropdown li.dropdown-top{
 		margin-top: -52px;
-		
 	}
+	.headhesive ul.dropdown li.dropdown-top{
+		margin-top: -10px;
+		margin-left: -70px;
+	}
+	.header ul.dropdown .dropdown-inside {
+    top: 30px;
+    
+  }
+  .header ul.dropdown .dropdown-inside a{
+  	font-size: 16px;
+  }
 	ul .dropdown .dropdown-top .dropdown-inside{
 		top: 0px;
 
@@ -38,9 +61,108 @@
 		left: 110px;
 	}
 	.headhesive .nav-bottom>ul{
-		margin-right: 5px;
+		display: none;
 	}
 	.headhesive .nav-bottom .wrapper{
 		float: right;
+	}
+	.header .registration {
+		width: 46%;
+    padding: 20px 32px;
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+	}
+	.header .cerec {
+    width: 100%;
+	}
+	.header .cerec img{
+		width: 50%;
+	}
+	.cerec h1 {
+    font-size: 30px;
+	}
+	body header{
+		height: 550px;
+	}
+	.action .baner {
+    width: 60%;
+    display: block;
+    margin: 10px auto;
+	}
+
+
+
+
+	.carousel-block img{
+		height: 200px;
+	}
+	.carousel-wrapper{
+		height: 280px;
+	}
+	.spec .carousel h2{
+		font-size: 28px;
+	}
+	body .spec{
+		padding-top: 5px;
+	}
+	.spec .carousel-button-left a, .spec .carousel-button-right a{
+		top: 8px;
+		left: 320px;
+	}
+	.carousel-items .carousel-block{
+		width: 2.3%;
+	}
+	.carousel .carousel-wrapper{
+		padding-top: 0;
+		margin-top: -30px;
+	}
+	.carousel .carousel-block h3, .carousel .carousel-block h4{
+		font-size: 20px;
+	}
+
+
+	.consultation{
+		padding: 0 10px;
+	}
+
+	body .consultation div h2{
+		font-size: 28px;
+	}
+	body .consultation div a{
+		font-size: 18px;
+		padding: 7px 55px;
+	}
+	body .services{
+		height: 1100px;
+	}
+	.f-services .right,
+	.f-services .left{
+		width: 100%;
+	}
+
+	.f-services .left li{
+		
+	}
+	.f-services .left a:nth-child(2n){
+		float: right;
+		margin-top: -85px;
+		width: 50%;
+	}
+	#content blockquote{
+		width: 100%;
+	}
+	#content blockquote h2{
+		font-size: 22px;
+	}
+	#content blockquote p{
+		
+	}
+	#content blockquote:before, 
+	#content blockquote:after{
+		font-size: 10em;
+	}
+	.sliderContent .all_otz{
+		left: 20px;
 	}
 }

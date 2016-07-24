@@ -13,13 +13,7 @@
    width: 10000px; /* óñòàíàâëèâàåì áîëüøóþ øèðèíó äëÿ íàáîðà ýëåìåíòîâ */
    position: relative; /* ïîçèöèîíèðóåì áëîê îòíîñèòåëüíî îñíîâíîé îáëàñòè êàðóñåëè */
 }
-.carousel-block {
-   float: left; /* âûñòðàèâàåì âñå ýëåìåíòû êàðóñåëè â ðÿä */
-   width: 4.5%; /* çàäà¸ì øèðèíó êàæäîãî ýëåìåíòà */
-   padding: 10px 10px 10px 0px; /* äåëàåì îñòóïû, ÷òîáû ýëåìåíòû íå ñëèâàëèñü */
-   text-align: center;
-   color: #2768b9;
-}
+
 .carousel-block h3,
 .carousel-block h4{
    font-family: 'MyriadProRegular';
@@ -37,7 +31,6 @@
    color: #494949;
 }
 .carousel-block img{
-	display:block;
    margin: 0 auto;
    margin-bottom: 20px;
   
@@ -72,17 +65,7 @@
    padding-top: 35px;
    position: relative;
 }
-.spec h2{
-   font-size: 36px;
-}
-.spec .all{
-   float: right;
-   color: #0654b5;
-   font-family: 'MyriadProRegular';
-   font-size: 24px;
-   margin-top: -50px;
-   margin-right: 20px;
-}
+
 @media (max-width: 1370px){
    .carousel-block {
    width: 4.15%;

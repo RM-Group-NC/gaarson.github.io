@@ -11,7 +11,56 @@ margin-bottom:10px;
 font-weight: bold;
 }
 
-
+.carousel-block {
+   float: left;
+   padding: 10px 10px 10px 0px;
+   text-align: center;
+   color: #2768b9;
+}
+.spec .carousel-block{
+	width: 33%;
+}
+.spec .prev,
+.spec .next{
+	top: -20px;
+	left: 450px;
+}
+.spec .next{
+	left: 542px;
+}
+.sliderBullets a {
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    outline: none;
+    margin-left: 5px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #0c45ba;
+    border-radius: 25px;
+}
+.sliderBullets a:hover{
+	background: #0c45ba;
+}
+.spec .sliderBullets{
+	position: absolute;
+	z-index: 100;
+	top: -45px;
+	left: 482px;
+}
+.otz .sliderBullets{
+	position: absolute;
+	right: 345px;
+	bottom: 185px;
+}
+.spec .slider{
+	margin-top: -35px;
+}
+.spec h2{
+   font-size: 36px;
+   margin-top: 40px;
+   margin-left: 50px;
+}
 /* ------ Стили для mobilyslider
 -----------------------------------------------*/
 
@@ -37,6 +86,9 @@ position:relative;
 overflow:hidden;
 background: #f7f7f7;
 }
+.spec .sliderContent{
+	background: url(../img/bg_spec.jpg) no-repeat 50%;
+}
 .sliderContent .all_otz{
 	color: #0654b5;
   font-family: 'MyriadProRegular';
@@ -46,7 +98,18 @@ background: #f7f7f7;
 	right: 500px;
 	z-index: 90;
 }
+.sliderContent .all_otz .all{
 
+}
+
+.spec .all {
+    float: right;
+    color: #0654b5;
+    font-family: 'MyriadProRegular';
+    font-size: 24px;
+    margin-top: -50px;
+    margin-right: 20px;
+}
 
 .sliderArrows a {
 display:block;
@@ -71,31 +134,26 @@ width: 89px;
 height:29px;
 position:absolute;
 top:70%;
-right: 300px;
+right: 242px;
 
 }
 
 
 .sliderContent .item {
-position:absolute;
 max-width: 1445px;
-width:100%;
 height:545px;
-background:#f7f7f7;
 margin: 0 auto;
+}
+.spec .sliderContent .item{
+	margin-top: -22px;
+}
+.spec .sliderContent .item img{
+	margin-left: 0;
 }
 .sliderContent .item img{
 	margin-top: 44px;
 	margin-left: 15%;
 }
-
-
-
-
-.sliderBullets .active {
-background-position:0 -11px;
-}
-
 .sliderContent a {
 outline:none;
 }

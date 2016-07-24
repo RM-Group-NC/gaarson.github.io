@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<title>Белый кит</title>
 	<link href="css/style.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>
 	<script src="js/mobilyslider.js" type="text/javascript"></script>
 	<script src="js/init.js" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
 
 	<script type="text/javascript">//Заявка, Диагностика
 
@@ -37,8 +38,6 @@ var array = new Array();
 var speed = 10;
 var timer = 10;
 </script>
-
-
 </head>
 <body>
 	<header>
@@ -46,7 +45,7 @@ var timer = 10;
 
 
 
-			<nav class="scroll_nav">
+			<nav class="scroll_nav" id="medium">
 				<a href="index.html">
 					<div class="logo"></div>
 				</a>
@@ -104,15 +103,13 @@ var timer = 10;
 	</header>
 
 <!--Слайд специалистов-->
-	<div class="spec">
-   <div class="carousel"> 
-   <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
-   <a href="" class="all">Все врачи</a>
-      <div class="carousel-button-left"><a href="#"></a></div> 
-      <div class="carousel-button-right"><a href="#"></a></div> 
-		<div class="carousel-wrapper"> 
-		   <div class="carousel-items"> 
-			  <a href="#"><div class="carousel-block">
+<div id="content" class="spec">
+		<div class="slider slider3">
+			<div class="sliderContent">
+			<h2>НАШИ СПЕЦИАЛИСТЫ</h2>
+			<a href="#" class="all">Все врачи</a>
+				<div class="item">
+					<a href="#"><div class="carousel-block">
 					<img src="img/spec1.png" alt="" />
 					<h3>Беляева</h3>
 					<h4>Наталья Валерьевна</h4>
@@ -130,7 +127,9 @@ var timer = 10;
 					<h4>Наталья Валерьевна</h4>
 					<p>Терапевт</p>
 			  </div></a>
-			 	<a href="#"><div class="carousel-block">
+				</div>
+				<div class="item">
+				<a href="#"><div class="carousel-block">
 					<img src="img/spec1.png" alt="" />
 					<h3>Беляева</h3>
 					<h4>Наталья Валерьевна</h4>
@@ -148,10 +147,33 @@ var timer = 10;
 					<h4>Наталья Валерьевна</h4>
 					<p>Терапевт</p>
 			  </div></a>
-		   </div>
+				</div>
+				<div class="item">
+				<a href="#"><div class="carousel-block">
+					<img src="img/spec1.png" alt="" />
+					<h3>Беляева</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec2.png" alt="" />
+					<h3>Назаров</h3>
+					<h4>Владимир Владимирович</h4>
+					<p>Ортопед, имплантолог</p>
+			  </div></a>
+			  <a href="#"><div class="carousel-block">
+					<img src="img/spec3.png" alt="" />
+					<h3>Воронова</h3>
+					<h4>Наталья Валерьевна</h4>
+					<p>Терапевт</p>
+			  </div></a>
+				</div>
+				
+				
+				
+			</div>
 		</div>
-   </div>
-</div>	
+	</div>
 <!--Акции-->
 	<article class="action">
 		<h2>АКЦИИ</h2>
@@ -169,30 +191,7 @@ var timer = 10;
 	</article>
 
 <!--Услуги-->
-	<article class="services">
-		<h2>УСЛУГИ</h2>
-		<div class="left">
-			<ul>
-				<li class="marker">Лечение зубов</li>
-				<li class="marker1">Комплекс гигиены 32 Ok»</li>
-				<li class="marker2">Имплантация</li>
-				<li class="marker3">Лечение десен</li>
-				<li class="marker4">Отбеливание</li>
-				<li class="marker5">Детская стоматология</li>
-				<li class="marker6">Выравнивание зубного ряда</li>
-				<li class="marker7">Стоматология для будущих мам</li>
-			</ul>
-		</div>
-		<div class="right">
-			<div class="img">
-				<img src="img/implantat.jpg" alt="">
-			</div>
-			<p>Имплантат является опорой будущей конструкции. Имплантация зубов нужна для того, чтобы стоматолог-ортопед смог качественно восстановить утраченный зубной ряд.</p>
-			<p>Отсутствие даже одного зуба вызывает существенные неудобства в жизни человека. Чтобы избежать таких неприятностей - следует обратиться к специалисту по протезированию зубов.</p>
-			<p>Имплантат является опорой будущей конструкции. Имплантация зубов нужна для того, чтобы стоматолог-ортопед смог качественно восстановить утраченный зубной ряд.</p>
-			<p>Отсутствие даже одного зуба вызывает существенные неудобства в жизни человека. Чтобы избежать таких неприятностей - следует обратиться к специалисту по протезированию зубов.</p><a href="#">Подробнее..</a>
-		</div>
-	</article>
+		<iframe class="services" src="services/services1.html" scrolling="no" width="100%" frameborder="0"></iframe>
 
 <!--Клиника года-->
 	<article class="white_whale">
@@ -205,7 +204,7 @@ var timer = 10;
 
 <!--Слайд с отзывами-->
 
-<div id="content">
+<div id="content" class="otz">
 		<div class="slider slider3">
 			<div class="sliderContent">
 			<a href="#" class="all_otz">Все отзывы</a>
@@ -230,27 +229,7 @@ var timer = 10;
    				</blockquote>
 					<img src="img/comment.png" alt="" />
 				</div>
-				<div class="item">
-				<blockquote>
-   					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis ep</h2>
-   					<p>Катерина Фишер - известная личность ;)</p>
-   				</blockquote>
-					<img src="img/comment2.png" alt="" />
-				</div>
-				<div class="item">
-				<blockquote>
-   					<h2>ЛЕЧЕНИЕ ЧАСТО ЗАНИМАЕТ МНОГО ВРЕМЕНИ. С CEREC, Я ПОЛУЧИЛ ПОЛНЦЕННУЮ КОРОНКУ ВСЕГО ЗА ОДИН ВЕЗИТ...</h2>
-   					<p>Катерина Фишер - известная личность ;)</p>
-   				</blockquote>
-					<img src="img/comment.png" alt="" />
-				</div>
-				<div class="item">
-				<blockquote>
-   					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis ep</h2>
-   					<p>Катерина Фишер - известная личность ;)</p>
-   				</blockquote>
-					<img src="img/comment2.png" alt="" />
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -278,7 +257,7 @@ var timer = 10;
 		</a>
 	</article>
 
-	<iframe class="map" src="map_address/address1.html" width="100%" height="760" frameborder="0"></iframe>
+	<iframe class="map" src="map_address/address1.html" width="100%" height="780" scrollwheel="false" frameborder="0"></iframe>
 
 	<article class="social">
 		<hgroup>
