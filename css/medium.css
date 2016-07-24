@@ -225,4 +225,7 @@
 	#box2 .box2 .down{
 		margin-top: 0;
 	}
+		nav.headhesive{
+	max-width: 768px;
+	}
 }

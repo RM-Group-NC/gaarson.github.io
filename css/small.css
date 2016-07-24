@@ -134,4 +134,43 @@
 		top: 255px;
 		left: 180px;
 	}
+	nav.headhesive{
+	max-width: 480px;
+	}
+}
+@media (max-width: 568px){
+
+	nav.headhesive{
+	max-width: 568px;
+	}
+}
+@media (max-width: 533px){
+
+	nav.headhesive{
+	max-width: 533px;
+	}
+}
+@media (max-width: 414px){
+
+	nav.headhesive{
+	max-width: 412px;
+	}
+}
+@media (max-width: 375px){
+
+	nav.headhesive{
+	max-width: 375px;
+	}
+}
+@media (max-width: 360px){
+
+	nav.headhesive{
+	max-width: 360px;
+	}
+}
+@media (max-width: 321px){
+
+	nav.headhesive{
+	max-width: 320px;
+	}
 }
