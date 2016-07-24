@@ -17,6 +17,27 @@ font-weight: bold;
    text-align: center;
    color: #2768b9;
 }
+.carousel-block h3,
+.carousel-block h4{
+   font-family: 'MyriadProRegular';
+   font-size: 30px;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+.carousel-block h4{
+   font-size: 24px;
+   text-transform: none;
+}
+.carousel-block p{
+   font-family: 'RobotoRegular';
+   font-size: 18px;
+   color: #494949;
+}
+.carousel-block img{
+   margin: 0 auto;
+   margin-bottom: 20px;
+  
+}
 .spec .carousel-block{
 	width: 33%;
 }
@@ -141,7 +162,6 @@ right: 242px;
 
 .sliderContent .item {
 max-width: 1445px;
-height:545px;
 margin: 0 auto;
 }
 .spec .sliderContent .item{

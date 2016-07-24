@@ -1,0 +1,137 @@
+@media (max-width: 480px){
+	body header{
+		height: 380px;
+	}
+	.scroll_nav .nav-top{
+		width: 100%;
+	}
+	header .nav-top .diagnosis{
+		text-align: center;
+		padding: 0;
+		padding-top: 20px;
+	}
+	header .nav-top .tel{
+		font-size: 16px;
+	}
+	.logo{
+		display: none;
+	}
+	.scroll_nav .nav-bottom{
+		left: -13px;
+		top: 79px;
+	}
+	.header .cerec{
+		margin-top: 35px;
+	}
+	.cerec h1{
+		font-size: 24px;
+	}
+	.header .registration{
+		padding: 10px 0;
+		font-size: 12px;
+	}
+
+	.headhesive ul.dropdown li.dropdown-top{
+		margin-top: -92px;
+		float: right;
+	}
+	body .headhesive ul.dropdown .dropdown-inside{
+		margin-top: -91px;
+	}
+
+
+
+	.spec .sliderContent .item img{
+		width: 100px;
+		height: 100px;
+	}
+	.spec .sliderContent h2{
+		font-size: 22px;
+	}
+	.spec .carousel-block h3, .spec .carousel-block h4{
+		font-size: 18px;
+	}
+	.spec .carousel-block p{
+		font-size: 14px;
+	}
+	.spec .slider .prev, .spec .slider .next{
+		left: 10px;
+		top: 20px;
+	}
+	.spec .slider .next{
+		left: 90px;
+	}
+	.spec .slider .sliderBullets{
+		left: 35px;
+		top: -5px;
+	}
+	.spec .slider .sliderContent .item{
+		margin-top: 38px;
+	}
+	.slider .sliderContent{
+		height: 400px;
+	}
+	body .spec .all{
+		margin-top: 10px;
+	}
+
+	.spec .slider{
+		height: 340px;
+	}
+
+
+	body .consultation div h2{
+		font-size: 22px;
+	}
+	body .consultation div a{
+		font-size: 16px;
+		padding: 7px 30px;
+		margin-left: 10px;
+	}
+	body .consultation div{
+		padding-top: 25px;
+	}
+
+
+	.f-services .left li{
+		font-size: 12px;
+	}
+	.f-services .right p{
+		font-size: 18px;
+	}
+
+
+
+
+	
+
+	.inf .three_whale{
+		width: 100%;
+	}
+	.otz .slider{
+		height: 350px;
+	}
+	#content blockquote h2{
+		font-size: 18px;
+	}
+	#content blockquote:before, 
+	#content blockquote:after{
+		font-size: 5em;
+	}
+	.slider .sliderContent .item img{
+		margin-left: 0;
+	}
+	.otz .prev, 
+	.otz .next{
+		top: 280px;
+		left: 150px;
+	}
+	.otz .next{
+		left: 240px;
+	}
+	.otz .sliderBullets{
+		width: 80px;
+		top: 255px;
+		left: 180px;
+	}
+}

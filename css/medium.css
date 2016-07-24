@@ -2,7 +2,6 @@
 	.scroll_nav .nav-top .tel{
 		padding-left: 10px;
 		margin-top: -20px;
-		font-size: 
 	}
 	.scroll_nav .nav-top .diagnosis{
 		background-position: 0 -20px;
@@ -132,6 +131,7 @@
 	body .consultation div a{
 		font-size: 18px;
 		padding: 7px 55px;
+		margin-left: 10px;
 	}
 	body .services{
 		height: 1100px;
@@ -164,5 +164,65 @@
 	}
 	.sliderContent .all_otz{
 		left: 20px;
+	}
+
+
+	.services h2, .action h2{
+		text-align: center;
+	}
+
+
+	.credit .column {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+  }
+
+	body .address div {
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+}
+	body .address{
+		float: left;
+		width: 25%;
+	}
+	.map-medium{
+		float: right;
+		width: 75%;
+		
+	}
+	
+
+	body #box h2{
+		margin-bottom: 20px;
+	}
+	#box2 .rezultat{
+		width: 100%;
+		margin-top: 0px;
+	}
+	#box2 .h2 h2{
+		font-size: 32px; 
+	}
+	#box2 .box2 h3{
+		font-size: 24px;
+	}
+	#box2 .box2 p{
+		font-size: 12px;
+	}
+	#box2 .box2 .c_k_z .price{
+		margin-top: 5px;
+	}
+	#box2 .box2 .c_k_z .price span{
+		font-size: 40px;
+	}
+	#box2 .box2 .c_k_z .price .rub{
+		font-size: 20px;
+	}
+	#box2 .box2 .c_k_z{
+		margin-top: 10px;
+	}
+	#box2 .box2 .down{
+		margin-top: 0;
 	}
 }

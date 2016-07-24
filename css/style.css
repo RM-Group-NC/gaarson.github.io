@@ -1,8 +1,8 @@
 @import url(medium.css);
+@import url(small.css);
 @import url(reset.css);
 @import url(fonts.css);
 @import url(nav.css);
-@import url(styles-carousel.css);
 @import url(slaid.css);
 
 
@@ -42,6 +42,7 @@ header{
 	width: 100%;
 	height: 759px;
 	background: #566c79 url(../img/bg_header.jpg) no-repeat 50%;
+
 }
 .header{
 	height: 100%;
@@ -222,6 +223,7 @@ nav a{
 .action h2{
 	font-size: 36px;
 	margin-left: 6px;
+	margin-bottom: 20px;
 }
 .baner{
 	width: 31.5%;
@@ -411,6 +413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', end
 .white_whale div{
 	text-align: center;
 	padding-top: 35px;
+	width: 100%;
 }
 .white_whale div h2{
 	font-size: 36px;
@@ -812,9 +815,7 @@ footer p{
 	.address .time {
 		font-size: 18px;
 	}
-	.social {
-    margin-top: -40px;
-  }
+	
   .activ img {
     position: absolute;
     top: 130px;
